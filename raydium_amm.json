@@ -1,6 +1,7 @@
 {
-  "version": "0.3.0",
+  "address": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
   "name": "raydium_amm",
+  "version": "0.3.0",
   "instructions": [
     {
       "name": "initialize",
@@ -2025,6 +2026,236 @@
           }
         ]
       }
+    },
+    {
+      "name": "Init",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "time",
+            "type": "u64"
+          },
+          {
+            "name": "pcDecimals",
+            "type": "u8"
+          },
+          {
+            "name": "coinDecimals",
+            "type": "u8"
+          },
+          {
+            "name": "pcLotSize",
+            "type": "u64"
+          },
+          {
+            "name": "coinLotSize",
+            "type": "u64"
+          },
+          {
+            "name": "pcAmount",
+            "type": "u64"
+          },
+          {
+            "name": "coinAmount",
+            "type": "u64"
+          },
+          {
+            "name": "market",
+            "type": "publicKey"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Deposit",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "maxCoin",
+            "type": "u64"
+          },
+          {
+            "name": "maxPc",
+            "type": "u64"
+          },
+          {
+            "name": "base",
+            "type": "u64"
+          },
+          {
+            "name": "poolCoin",
+            "type": "u64"
+          },
+          {
+            "name": "poolPc",
+            "type": "u64"
+          },
+          {
+            "name": "poolLp",
+            "type": "u64"
+          },
+          {
+            "name": "calcPnlX",
+            "type": "u128"
+          },
+          {
+            "name": "calcPnlY",
+            "type": "u128"
+          },
+          {
+            "name": "deductCoin",
+            "type": "u64"
+          },
+          {
+            "name": "deductPc",
+            "type": "u64"
+          },
+          {
+            "name": "mintLp",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Withdraw",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "withdrawLp",
+            "type": "u64"
+          },
+          {
+            "name": "userLp",
+            "type": "u64"
+          },
+          {
+            "name": "poolCoin",
+            "type": "u64"
+          },
+          {
+            "name": "poolPc",
+            "type": "u64"
+          },
+          {
+            "name": "poolLp",
+            "type": "u64"
+          },
+          {
+            "name": "calcPnlX",
+            "type": "u128"
+          },
+          {
+            "name": "calcPnlY",
+            "type": "u128"
+          },
+          {
+            "name": "outCoin",
+            "type": "u64"
+          },
+          {
+            "name": "outPc",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SwapBaseIn",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "amountIn",
+            "type": "u64"
+          },
+          {
+            "name": "minimumOut",
+            "type": "u64"
+          },
+          {
+            "name": "direction",
+            "type": "u64"
+          },
+          {
+            "name": "userSource",
+            "type": "u64"
+          },
+          {
+            "name": "poolCoin",
+            "type": "u64"
+          },
+          {
+            "name": "poolPc",
+            "type": "u64"
+          },
+          {
+            "name": "outAmount",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SwapBaseOut",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "maxIn",
+            "type": "u64"
+          },
+          {
+            "name": "amountOut",
+            "type": "u64"
+          },
+          {
+            "name": "direction",
+            "type": "u64"
+          },
+          {
+            "name": "userSource",
+            "type": "u64"
+          },
+          {
+            "name": "poolCoin",
+            "type": "u64"
+          },
+          {
+            "name": "poolPc",
+            "type": "u64"
+          },
+          {
+            "name": "deductIn",
+            "type": "u64"
+          }
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "Init",
+      "discriminator": [0]
+    },
+    {
+      "name": "Deposit",
+      "discriminator": [1]
+    },
+    {
+      "name": "Withdraw",
+      "discriminator": [2]
+    },
+    {
+      "name": "SwapBaseIn",
+      "discriminator": [3]
+    },
+    {
+      "name": "SwapBaseOut",
+      "discriminator": [4]
     }
   ],
   "errors": [
