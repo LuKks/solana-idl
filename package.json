@@ -4,7 +4,13 @@
   "description": "Common Solana IDLs",
   "main": "index.js",
   "files": [
-    "idl"
+    "spl_token.json",
+    "pump.json",
+    "pump_amm.json",
+    "raydium_amm.json",
+    "raydium_clmm.json",
+    "raydium_cpmm.json",
+    "raydium_launchpad.json"
   ],
   "scripts": {
     "test": "standard"
