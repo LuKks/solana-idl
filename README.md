@@ -11,7 +11,7 @@ npm i solana-idl
 ```js
 const IDL = require('solana-idl')
 
-// IDL => { pump, pump_amm, raydium_amm, ... }
+// IDL => { spl_token, pump, pump_amm, raydium_amm, ... }
 // IDL.pump => { instructions, accounts, events, types, ... }
 ```
 
@@ -24,6 +24,7 @@ const PumpswapIDL = require('solana-idl/pump_amm.json')
 
 List of available IDLs:
 
+- `spl_token`
 - `pump`
 - `pump_amm`
 - `raydium_amm`
