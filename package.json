@@ -1,0 +1,26 @@
+{
+  "name": "solana-idl",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "idl"
+  ],
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukks/solana-idl.git"
+  },
+  "author": "Lucas Barrena (LuKks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukks/solana-idl/issues"
+  },
+  "homepage": "https://github.com/lukks/solana-idl#readme",
+  "devDependencies": {
+    "brittle": "^3.3.2",
+    "standard": "^17.1.0"
+  }
+}
