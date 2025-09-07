@@ -1,3 +1,5 @@
+exports.spl_token = require('./spl_token.json')
+
 exports.pump = require('./pump.json')
 exports.pump_amm = require('./pump_amm.json')
 
