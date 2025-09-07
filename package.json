@@ -1,6 +1,6 @@
 {
   "name": "solana-idl",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Common Solana IDLs",
   "main": "index.js",
   "files": [
