@@ -1,7 +1,7 @@
 {
   "name": "solana-idl",
   "version": "1.0.0",
-  "description": "",
+  "description": "Common Solana IDLs",
   "main": "index.js",
   "files": [
     "idl"
